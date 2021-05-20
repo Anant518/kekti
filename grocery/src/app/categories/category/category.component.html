@@ -1,0 +1,55 @@
+<!-- <div class="container col">
+    <div class="row">
+
+      <div class="card" style="width: 25rem;" >
+          <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVBT54yM2wK4M78Ydr_mGCd5bBxQ4RTGOtIw&usqp=CAU" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Fast Foods</h5>
+            <p class="card-text">Eating fast food items helps you to manage a schedule more effectively.</p>
+            <a routerLink="/viewproducts" class="btn btn-primary">View</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 25rem;">
+          <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX5Xh-lIvxD0MxicFfBIp5Khi_dWRkRedcQQ&usqp=CAU" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Dairy Items</h5>
+            <p class="card-text">Dairy products include food items such as yogurt, cheese and butter. A facility that produces dairy products is known as a dairy, or dairy factory..</p>
+            <a href="#" class="btn btn-primary">View</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 25rem;">
+          <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6SjYxZXy_JKZ6NhUw1ZlY2uLry91NcHxN6A&usqp=CAU" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Fruits</h5>
+            <p class="card-text">Fruit is the sweet, fleshy, edible part of a plant. It generally contains seeds. Fruits are usually eaten raw, although some varieties can be cooked. They come in a wide variety of colours, shapes and flavours..</p>
+            <a href="#" class="btn btn-primary">View</a>
+          </div>
+        </div>
+
+  </div> -->
+
+
+
+
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h4 class="pt-3">Our Categories</h4>
+        <!-- <router-link id="add-category" :to="{name : 'AddCategory'}" v-show="$route.name=='AdminCategory'">
+          <button class="btn">Add a new Category</button>
+        </router-link> -->
+      </div>
+    </div>
+    <div class="card" style="width: 25rem;"  *ngFor="let ca of cat">
+      <img class="card-img-top" src={{cat.imageUrl}} alt="Card image cap">
+      <div class="card-body">
+          <h5 class="card-title">{{cat.cart_name}}</h5>
+          <p class="card-text">{{cat.description}}</p>
+          <!-- <a routerLink="/viewproducts" class="btn btn-primary">View</a> -->
+      </div>
+  </div>
+  </div>

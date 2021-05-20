@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 text-center">
+      <h4 class="pt-3">Our Products</h4>
+      <br>
+      <div class="row">
+        <div class="col-sm-3" *ngFor="let product of products">
+          <div class="card">
+            <img src={{products.imageUrl}} class="card-img-top" width="200px">
+            <div class="card-body">
+              <h2>{{products.name}}</h2>
+              <p class="card-text" style="text-overflow:ellipsis;">{{ products.description }}</p>
+              <h2>Price:{{products.price}}</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- <a ></a> -->
+      <!-- <router-link id="add-product" :to="{name : 'AddProduct'}" v-show="$route.name=='AdminProduct'"> -->
+        <!-- <button class="btn"  routerLink="addproduct" routerLinkActive="active">Add a new Product</button> -->
+      <!-- </router-link> -->
+    </div>
+  </div>
+  <div class="row">
+      <!-- <div v-for="product of products" :key="product.id" class="col-md-6 col-xl-4 col-12 pt-3  justify-content-around d-flex">
+        <ProductBox :product="product">
+        </ProductBox> -->
+      </div>
+  
+</div>
